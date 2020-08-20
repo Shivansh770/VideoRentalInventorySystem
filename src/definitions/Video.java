@@ -7,6 +7,8 @@
 
 package definitions;
 
+import java.util.Objects;
+
 public class Video {
     private String videoName;
     private boolean checkOut;
@@ -55,6 +57,21 @@ public class Video {
         );
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) //comparing the reference value of two reference variables
+            //both the  reference variables are reffering to the same object.
+            return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Video video = (Video) o;
+        return isCheckOut() == video.isCheckOut() &&
+                getRating() == video.getRating() &&
+                Objects.equals(getVideoName(), video.getVideoName());
+    }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(getVideoName(), isCheckOut(), getRating());
+    }
 }
 

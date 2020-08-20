@@ -35,5 +35,19 @@ public class Video {
     public void setRating(int rating) {
         this.rating = rating;
     }
+
+    public Video() {
+        this.videoName = "Golmall";
+        this.rating = 5;
+        this.checkOut = true;
+    }
+
+    public Video(String videoName, int rating) {
+        this.videoName = videoName;
+        this.rating = rating;
+        this.checkOut = true;
+    }
+
+
 }
 

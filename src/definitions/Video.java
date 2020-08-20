@@ -23,5 +23,17 @@ public class Video {
     public boolean isCheckOut() {
         return checkOut;
     }
+
+    public void setVideoName(String videoName) {
+        this.videoName = videoName;
+    }
+
+    public void setCheckOut(boolean checkOut) {
+        this.checkOut = checkOut;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
+    }
 }
 

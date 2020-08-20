@@ -12,30 +12,6 @@ public class Video {
     private boolean checkOut;
     private int rating;
 
-    public String getVideoName() {
-        return videoName;
-    }
-
-    public int getRating() {
-        return rating;
-    }
-
-    public boolean isCheckOut() {
-        return checkOut;
-    }
-
-    public void setVideoName(String videoName) {
-        this.videoName = videoName;
-    }
-
-    public void setCheckOut(boolean checkOut) {
-        this.checkOut = checkOut;
-    }
-
-    public void setRating(int rating) {
-        this.rating = rating;
-    }
-
     public Video() {
         this.videoName = "Golmall";
         this.rating = 5;
@@ -46,6 +22,30 @@ public class Video {
         this.videoName = videoName;
         this.rating = rating;
         this.checkOut = true;
+    }
+
+    public String getVideoName() {
+        return videoName;
+    }
+
+    public void setVideoName(String videoName) {
+        this.videoName = videoName;
+    }
+
+    public int getRating() {
+        return rating;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
+    }
+
+    public boolean isCheckOut() {
+        return checkOut;
+    }
+
+    public void setCheckOut(boolean checkOut) {
+        this.checkOut = checkOut;
     }
 
 

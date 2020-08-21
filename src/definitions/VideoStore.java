@@ -84,4 +84,13 @@ public class VideoStore {
     public void receiveRating(String name, int rating) {
         System.out.println("The new rating of \"" + name + "\" is " + rating);
     }
+
+    /**
+     * This method will print all the elements of the store array.
+     */
+    public void listInventory() {
+        for (Video video : this.store) {
+            System.out.println(video);
+        }
+    }
 }

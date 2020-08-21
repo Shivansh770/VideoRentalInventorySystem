@@ -7,13 +7,9 @@
 
 package execution;
 
-import definitions.Video;
-
-
 public class Main {
     public static void main(String[] args) {
-        Video video = new Video("I Robot", 4);
-        Video video1 = new Video("Transformers", 5);
+
         //we would like to check objext are equal or not
         //1..if both the objects(reference variable) refer to same object.
 

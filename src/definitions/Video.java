@@ -10,6 +10,14 @@ package definitions;
 import java.util.Objects;
 
 public class Video {
+
+    // Components of a Definition Class in Java
+    // 1. private fields
+    // 2. public getters & setters
+    // 3. Constructors for initializing the fields.
+    // 4. toString() method
+    // 5. equals() and hashCode() method
+
     private String videoName;
     private boolean checkOut;
     private int rating;
@@ -20,10 +28,21 @@ public class Video {
         this.checkOut = true;
     }
 
+    public Video(String videoName) {
+        this.videoName = videoName;
+        this.rating = 1;
+        this.checkOut = true;
+    }
+
+    public Video(String videoName, boolean checkOut, int rating) {
+        this.videoName = videoName;
+        this.checkOut = checkOut;
+        this.rating = rating;
+    }
+
     public Video(String videoName, int rating) {
         this.videoName = videoName;
         this.rating = rating;
-        this.checkOut = true;
     }
 
     public String getVideoName() {
@@ -65,6 +84,10 @@ public class Video {
         System.out.println("Thank you for returning.");
     }
 
+    // The purpose of these "special" methods is already defined.
+    // So, we do not have to write the documentation comments.
+
+    @Override
     public String toString() {
         return String.format(
                 "Video Name: %s, Video Rating: %d, Is Video Available: %b",

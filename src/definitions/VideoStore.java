@@ -47,4 +47,13 @@ public class VideoStore {
     public int hashCode() {
         return Arrays.hashCode(getStore());
     }
+
+    /**
+     * This method will allow us to add a video to the video store.
+     *
+     * @param name The name of the video that we want to add.
+     */
+    public void addVideo(String name) {
+        System.out.println("\"" + name + "\" is now added to the video store.");
+    }
 }

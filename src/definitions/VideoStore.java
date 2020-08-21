@@ -10,4 +10,12 @@ package definitions;
 public class VideoStore {
     private Video[] store;
 
+
+    public Video[] getStore() {
+        return store.clone(); // a copy of the `store` array
+    }
+
+    public void setStore(Video[] store) {
+        this.store = store;
+    }
 }

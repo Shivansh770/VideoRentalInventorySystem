@@ -58,6 +58,13 @@ public class Video {
         System.out.println("Thank you for renting.");
     }
 
+    /**
+     * This method will allow the customer to return a video.
+     */
+    public void doReturn() {
+        System.out.println("Thank you for returning.");
+    }
+
     public String toString() {
         return String.format(
                 "Video Name: %s, Video Rating: %d, Is Video Available: %b",

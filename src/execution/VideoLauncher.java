@@ -7,7 +7,7 @@
 
 package execution;
 
-public class Main {
+public class VideoLauncher {
     public static void main(String[] args) {
 
         //we would like to check objext are equal or not

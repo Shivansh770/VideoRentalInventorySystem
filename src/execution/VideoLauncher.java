@@ -9,31 +9,15 @@ package execution;
 
 public class VideoLauncher {
     public static void main(String[] args) {
+        System.out.println("MAIN MENU");
+        System.out.println("=========");
+        System.out.println("1. Add video: ");
+        System.out.println("2. Check out video: ");
+        System.out.println("3. Return video: ");
+        System.out.println("4. Receive rating: ");
+        System.out.println("5. List Inventory: ");
+        System.out.println("6. Exit");
+        System.out.println("Enter your choice (1..6): ");
 
-        //we would like to check objext are equal or not
-        //1..if both the objects(reference variable) refer to same object.
-
-//          if (video==video1) {
-//          System.out.println("Equal");
-//          }else{
-//           System.out.println("Not Equal");
-//        }
-        //2. if both the objects are from same class AND if the feilds of both objects have exact same value
-
-//        String name ="Shivansh";
-//        if(video.getClass().equals(video1.getClass())) {
-//            System.out.println("They are from same class!");
-//            if(
-//                    video.getRating()==video1.getRating() &&
-//                            video.isCheckOut()==video1.isCheckOut() &&
-//                            video.getVideoName().equals(video1.getVideoName())
-//            ){
-//                System.out.println("the objects are equal");
-//            }
-//        }else{
-//            System.out.println(" i am from the" + video.getClass().getName() + "class.");
-//            System.out.println(" you are from the" + video1.getClass().getName() + "class.");
-//            System.out.println("We are not same bro!");
-//        }
     }
 }

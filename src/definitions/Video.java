@@ -50,6 +50,14 @@ public class Video {
         this.checkOut = checkOut;
     }
 
+
+    /**
+     * This method will allow the customer to rent a video.
+     */
+    public void doCheckout() {
+        System.out.println("Thank you for renting.");
+    }
+
     public String toString() {
         return String.format(
                 "Video Name: %s, Video Rating: %d, Is Video Available: %b",
@@ -60,7 +68,7 @@ public class Video {
     @Override
     public boolean equals(Object o) {
         if (this == o) //comparing the reference value of two reference variables
-            //both the  reference variables are reffering to the same object.
+            //both the  reference variables are refering to the same object.
             return true;
         if (o == null || getClass() != o.getClass()) return false;
         Video video = (Video) o;
